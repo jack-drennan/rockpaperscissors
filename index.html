@@ -10,6 +10,9 @@
 
         function getComputerChoice () {
             num = Math.random() * 3
+            
+            return (num <= 1) ? "Rock" : (num <= 2) ? "Paper" : "Scissors"
+            /*
             if (num <= 1) {
                 return "Rock"
             }
@@ -19,6 +22,7 @@
             else {
                 return "Scissors"
             }
+            */
         }
 
 
