@@ -9,9 +9,9 @@
     <script>
 
         function getComputerChoice () {
-            num = Math.random() * 3
+            let num = Math.random() * 3;
             
-            return (num <= 1) ? "Rock" : (num <= 2) ? "Paper" : "Scissors"
+            return (num <= 1) ? "Rock" : (num <= 2) ? "Paper" : "Scissors";
             /*
             if (num <= 1) {
                 return "Rock"
@@ -26,47 +26,48 @@
         }
 
         function playRound(playerSelection, computerSelection) {
-            let p = playerSelection.toUpperCase()
-            let c = computerSelection.toUpperCase()
+            let p = playerSelection.toUpperCase();
+            let c = computerSelection.toUpperCase();
 
             if (p === "ROCK") {
                 if (c === "PAPER") {
-                    return "You Lose! Paper beats Rock"
+                    return "You Lose! Paper beats Rock";
                 }
                 else if (c === "SCISSORS") {
-                    return "You Win! Rock beats Scissors"
+                    return "You Win! Rock beats Scissors";
                 }
                 else {
-                    return "It's a Tie! Play Again"
+                    return "It's a Tie! Play Again";
                 }
             }
             else if (p === "SCISSORS") {
                 if (c === "PAPER") {
-                    return "You Win! Scissors beats Paper"
+                    return "You Win! Scissors beats Paper";
                 }
                 else if (c === "SCISSORS") {
-                    return "It's a Tie! Play Again"
+                    return "It's a Tie! Play Again";
                 }
                 else {
-                    return "You Lose! Rock beats Scissors"
+                    return "You Lose! Rock beats Scissors";
                 }
             }
             else if (p === "PAPER") {
                 if (c === "PAPER") {
-                    return "It's a Tie! Play Again"
+                    return "It's a Tie! Play Again";
                 }
                 else if (c === "SCISSORS") {
-                    return "You Lose! Scissors beats Paper"
+                    return "You Lose! Scissors beats Paper";
                 }
                 else {
-                    return "You Win! Paper beats Rock"
+                    return "You Win! Paper beats Rock";
                 }
             }
             else {
-                return "Please enter Rock, Paper or Scissors"
+                return "Please enter Rock, Paper or Scissors";
             }
         }
 
+        
 
         const playerSelection = "pApeR";
         const computerSelection = getComputerChoice();
